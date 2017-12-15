@@ -1,4 +1,4 @@
-namespace AspNetCore.DataLayer.Models
+namespace DataLayer.Models
 {
     public enum Grade
     {

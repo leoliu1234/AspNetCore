@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "AspNetCore"
+		},
+		{
+			"path": "DataLayer"
+		},
+		{
+			"path": "BusinessLogicLayer"
+		}
+	],
+	"settings": {}
+}

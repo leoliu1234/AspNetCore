@@ -1,7 +1,7 @@
 using Microsoft.EntityFrameworkCore;
-using AspNetCore.DataLayer.Models;
+using DataLayer.Models;
 
-namespace AspNetCore.DataLayer.Data
+namespace DataLayer.Data
 {
     public class SchoolContext : DbContext
     {

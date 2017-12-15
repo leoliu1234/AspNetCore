@@ -1,8 +1,8 @@
 using System;
-using AspNetCore.DataLayer.Data;
-using AspNetCore.DataLayer.Models;
+using DataLayer.Data;
+using DataLayer.Models;
 
-namespace demo
+namespace BusinessLogicLayer.Logics
 {
     public class UserLogic : IUserLogic
     {
