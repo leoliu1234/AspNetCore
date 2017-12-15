@@ -9,18 +9,14 @@ namespace demo
         private readonly ILogger _logger;
 
         public HomeController(
-            IUserLogic userLogic,
-            ILogger logger
+            IUserLogic userLogic
             )
         {
             _userLogic = userLogic;
-            _logger = logger;
         }
 
         public ActionResult Index()
         {
-            _logger.LogError(1,null,"test");
-
             return View();
         }
 

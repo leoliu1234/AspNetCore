@@ -23,3 +23,8 @@ d:\Study\Code\Web\CoreDotNet\AspNetCore\obj\Debug\netcoreapp2.0\demo.AssemblyInf
 d:\Study\Code\Web\CoreDotNet\AspNetCore\obj\Debug\netcoreapp2.0\demo.AssemblyInfo.cs
 d:\Study\Code\Web\CoreDotNet\AspNetCore\obj\Debug\netcoreapp2.0\demo.dll
 d:\Study\Code\Web\CoreDotNet\AspNetCore\obj\Debug\netcoreapp2.0\demo.pdb
+d:\Study\Code\Web\CoreDotNet\AspNetCore\bin\Debug\netcoreapp2.0\demo.deps.json
+d:\Study\Code\Web\CoreDotNet\AspNetCore\bin\Debug\netcoreapp2.0\demo.runtimeconfig.json
+d:\Study\Code\Web\CoreDotNet\AspNetCore\bin\Debug\netcoreapp2.0\demo.runtimeconfig.dev.json
+d:\Study\Code\Web\CoreDotNet\AspNetCore\bin\Debug\netcoreapp2.0\demo.dll
+d:\Study\Code\Web\CoreDotNet\AspNetCore\bin\Debug\netcoreapp2.0\demo.pdb

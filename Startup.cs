@@ -9,6 +9,10 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Identity;
 
 namespace demo
 {
@@ -16,20 +20,25 @@ namespace demo
     {
         public Startup(IHostingEnvironment env)
         {
-                // Configuration = new ConfigurationBuilder()
-                // .SetBasePath(env.ContentRootPath)
-                // .AddJsonFile("appsettings.json",optional:false,reloadOnChange: true)
-                // .Build();
+            // Configuration = new ConfigurationBuilder()
+            // .SetBasePath(env.ContentRootPath)
+            // .AddJsonFile("appsettings.json",optional:false,reloadOnChange: true)
+            // .Build();
         }
         // This method gets called by the runtime. Use this method to add services to the container.
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<SchoolContext>((options)=> options.UseSqlServer(""));
-            services.AddMvc();
-            services.AddSingleton<IUserLogic, UserLogic>();
+            services.AddDbContext<SchoolContext>(option => option.UseSqlServer("Data Source=.;Initial Catalog=gentelella;Integrated Security=True"));
+            // services.AddIdentity<ApplicationUser, IdentityRole>().AddEntityFrameworkStores<SchoolContext>();
 
-            services.AddTransient<ILogger, Logger>();
+            services.AddTransient<IUserLogic, UserLogic>();
+
+            services.AddMvc();
+
+
+
+            // services.AddTransient<ILogger, Logger>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
